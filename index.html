@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Display Current Time and Date -->
-    <div class="clock-container">
-      <span id="clock-time"> 00:00:00 </span>
-      <span id="clock-date"> </span>
-    </div>
+    
     <!-- User Registration Form -->
+    <!-- JS NOT done -->
+    <!-- CSS NOT done -->
     <form id="registration-form">
-      <input required id="registration-input" type="text" />
-      <button id="registration-btn">Sign Up</button>
+      <input required 
+      maxlength="12" 
+      id="registration-input" 
+      type="text"
+      placeholder="Enter your name :)" />
+      <button type="submit">Sign Up</button>
     </form>
+
     <!-- Display Greeting -->
-    <div class="greeting-container">
+    <div class="greeting-container hidden">
       <h1 id="greeting"></h1>
       <p id="quote">
         <span></span>
@@ -37,11 +40,20 @@
         </span>
       </div>
     </div>
+    <!-- Display Current Time and Date -->
+    <!-- JS done -->
+    <!-- CSS NOT done -->
+    <div class="clock-container">
+        <span id="clock-time"> 00:00:00 </span>
+        <span id="clock-date"> </span>
+      </div>
     <!-- After Login Scene -->
 
     <!-- Horizontal Weekly Calendar -->
     <main>
       <!-- Mode Icons -->
+      <!-- JS NOT done -->
+      <!-- CSS NOT done -->
       <div class="mode-container">
         <span id="mode-left">
           <!-- Arrow Left Icon -->
@@ -54,6 +66,8 @@
         </span>
       </div>
       <!-- Calendar Table -->
+      <!-- JS NOT done -->
+      <!-- CSS NOT done -->
       <div class="calender-container">
         <table id="calendar-table">
           <thead>
@@ -79,7 +93,7 @@
         </table>
       </div>
     </main>
-
+    <script src="/js/registration.js"></script>
     <script src="/js/clock.js"></script>
   </body>
 </html>
