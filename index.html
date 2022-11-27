@@ -1,15 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrackTodo</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Display Current Time and Date -->
+    <div class="clock-container">
+      <span id="clock-time"> 00:00:00 </span>
+      <span id="clock-date"> </span>
+    </div>
+    <!-- User Registration Form -->
+    <form id="registration-form">
+      <input required id="registration-input" type="text" />
+      <button id="registration-btn">Sign Up</button>
+    </form>
+    <!-- Display Greeting -->
+    <div class="greeting-container">
+      <h1 id="greeting"></h1>
+      <p id="quote">
+        <span></span>
+        <span></span>
+      </p>
+      <div id="weather">
+        <span>
+          <!-- Today's weather with an icon -->
+        </span>
+        <span>
+          <!-- Current Degree in Cel -->
+        </span>
+        <span>
+          <!-- Current Humidity -->
+        </span>
+      </div>
+    </div>
+    <!-- After Login Scene -->
 
-    <script src="js/"></script>
-</body>
+    <!-- Horizontal Weekly Calendar -->
+    <main>
+      <!-- Mode Icons -->
+      <div class="mode-container">
+        <span id="mode-left">
+          <!-- Arrow Left Icon -->
+        </span>
+        <span id="mode-focused">
+          <!-- Oval Focusing Icon -->
+        </span>
+        <span id="mode-right">
+          <!-- Arrow Right Icon -->
+        </span>
+      </div>
+      <!-- Calendar Table -->
+      <div class="calender-container">
+        <table id="calendar-table">
+          <thead>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="/js/clock.js"></script>
+  </body>
 </html>
