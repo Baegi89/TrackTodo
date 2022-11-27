@@ -10,7 +10,7 @@
   <body>
     
     <!-- User Registration Form -->
-    <!-- JS NOT done -->
+    <!-- JS done -->
     <!-- CSS NOT done -->
     <form id="registration-form">
       <input required 
@@ -21,7 +21,9 @@
       <button type="submit">Sign Up</button>
     </form>
 
-    <!-- Display Greeting -->
+    <!-- Greeting Card -->
+    <!-- JS: greeting done, quote done, weather NOT done-->
+    <!-- CSS NOT done -->
     <div class="greeting-container hidden">
       <h1 id="greeting"></h1>
       <p id="quote">
@@ -31,6 +33,9 @@
       <div id="weather">
         <span>
           <!-- Today's weather with an icon -->
+        </span>
+        <span>  
+          <!-- Current location City -->
         </span>
         <span>
           <!-- Current Degree in Cel -->
@@ -50,7 +55,7 @@
     <!-- After Login Scene -->
 
     <!-- Horizontal Weekly Calendar -->
-    <main>
+    <main class="main-container hidden">
       <!-- Mode Icons -->
       <!-- JS NOT done -->
       <!-- CSS NOT done -->
@@ -93,7 +98,10 @@
         </table>
       </div>
     </main>
+
     <script src="/js/registration.js"></script>
     <script src="/js/clock.js"></script>
+    <script src="/js/quotes.js"></script>
+    <script src="/js/weather.js"></script>
   </body>
 </html>
