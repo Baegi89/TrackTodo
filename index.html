@@ -6,75 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrackTodo</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
   </head>
   <body>
-    
-    <!-- User Registration Form -->
-    <!-- JS done -->
-    <!-- CSS NOT done -->
-    <form id="registration-form">
-      <input required 
-      maxlength="12" 
-      id="registration-input" 
-      type="text"
-      placeholder="Enter your name :)" />
-      <button type="submit">Sign Up</button>
-    </form>
+    <div class="hidden">
+      <!-- User Registration Form -->
+      <!-- JS done -->
+      <!-- CSS NOT done -->
+      <form id="registration-form">
+        <input
+          required
+          maxlength="12"
+          id="registration-input"
+          type="text"
+          placeholder="Enter your name :)"
+        />
+        <button type="submit">Sign Up</button>
+      </form>
 
-    <!-- Greeting Card -->
-    <!-- JS: greeting done, quote done, weather NOT done-->
-    <!-- CSS NOT done -->
-    <div class="greeting-container hidden">
-      <h1 id="greeting"></h1>
-      <p id="quote">
-        <span></span>
-        <span></span>
-      </p>
-      <div id="weather">
-        <span>
-          <!-- Today's weather with an icon -->
-        </span>
-        <span>  
-          <!-- Current location City -->
-        </span>
-        <span>
-          <!-- Current Degree in Cel -->
-        </span>
-        <span>
-          <!-- Current Humidity -->
-        </span>
+      <!-- Greeting Card -->
+      <!-- JS: greeting done, quote done, weather done-->
+      <!-- CSS NOT done -->
+      <div class="greeting-container hidden">
+        <h1 id="greeting"></h1>
+        <p id="quote">
+          <span></span>
+          <span></span>
+        </p>
+        <div id="weather">
+          <span>
+            <!-- Today's weather with an icon -->
+          </span>
+          <span>
+            <!-- Current location City -->
+          </span>
+          <span>
+            <!-- Current Degree in Cel -->
+          </span>
+          <span>
+            <!-- Current Humidity -->
+          </span>
+        </div>
       </div>
-    </div>
-    <!-- Display Current Time and Date -->
-    <!-- JS done -->
-    <!-- CSS NOT done -->
-    <div class="clock-container">
+      <!-- Display Current Time and Date -->
+      <!-- JS done -->
+      <!-- CSS NOT done -->
+      <div class="clock-container">
         <span id="clock-time"> 00:00:00 </span>
         <span id="clock-date"> </span>
       </div>
-    <!-- After Login Scene -->
-
+      <!-- After Login Scene -->
+    </div>
     <!-- Horizontal Weekly Calendar -->
-    <main class="main-container hidden">
+    <main class="main-container">
       <!-- Mode Icons -->
       <!-- JS NOT done -->
       <!-- CSS NOT done -->
       <div class="mode-container">
         <span id="mode-left">
           <!-- Arrow Left Icon -->
+          <i class="fa-solid fa-chevron-left"></i>
         </span>
         <span id="mode-focused">
-          <!-- Oval Focusing Icon -->
+          <!-- Circle Icon -->
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle-dot"></i>
         </span>
         <span id="mode-right">
           <!-- Arrow Right Icon -->
+          <i class="fa-solid fa-chevron-right"></i>
         </span>
       </div>
       <!-- Calendar Table -->
-      <!-- JS NOT done -->
+      <!-- JS done -->
       <!-- CSS NOT done -->
-      <div class="calender-container">
-        <table id="calendar-table">
+      <div class="table-container">
+        <table>
           <thead>
             <th>Monday</th>
             <th>Tuesday</th>
@@ -85,14 +92,70 @@
             <th>Sunday</th>
           </thead>
           <tbody>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
+            <tr id="todoTable">
+              <!-- Monday -->
+              <td>
+                <ul>
+                  <!-- Where Todo Element should be -->
+                </ul>
+                <form>
+                  <input type="text" />
+                </form>
+              </td>
+              <!-- Tuesday -->
+              <td>
+                <ul>
+                  <!-- Where Todo Element should be -->
+                </ul>
+                <form>
+                  <input type="text" />
+                </form>
+              </td>
+              <!-- Wednesday -->
+              <td>
+                <ul>
+                  <!-- Where Todo Element should be -->
+                </ul>
+                <form>
+                  <input type="text" />
+                </form>
+              </td>
+              <!-- Thursday -->
+              <td>
+                <ul>
+                  <!-- Where Todo Element should be -->
+                </ul>
+                <form>
+                  <input type="text" />
+                </form>
+              </td>
+              <!-- Friday -->
+              <td>
+                <ul>
+                  <!-- Where Todo Element should be -->
+                </ul>
+                <form>
+                  <input type="text" />
+                </form>
+              </td>
+              <!-- Saturday -->
+              <td>
+                <ul>
+                  <!-- Where Todo Element should be -->
+                </ul>
+                <form>
+                  <input type="text" />
+                </form>
+              </td>
+              <!-- Sunday -->
+              <td>
+                <ul>
+                  <!-- Where Todo Element should be -->
+                </ul>
+                <form>
+                  <input type="text" />
+                </form>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -103,5 +166,6 @@
     <script src="/js/clock.js"></script>
     <script src="/js/quotes.js"></script>
     <script src="/js/weather.js"></script>
+    <script src="/js/table.js"></script>
   </body>
 </html>
