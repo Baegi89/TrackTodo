@@ -34,8 +34,8 @@ function getDate(){
     const dateObject = new Date();
 
     // Initialize current date, Date Object method returns the value as integer
-    const currentMonth = dateObject.getMonth();
-    const currentDay = dateObject.getDay();
+    const currentMonth = dateObject.getMonth() + 1;
+    const currentDay = dateObject.getDate();
     const currentYear = dateObject.getFullYear();
 
     /*
@@ -45,7 +45,7 @@ function getDate(){
     const currentMonthToString = String(currentMonth).padStart(2, "0");
     const currentDayToString = String(currentDay).padStart(2, "0");
     const currentYearToString = String(currentYear).padStart(2, "0");
-
+    
     // To update the current time to HTML tag
     date.innerText = `${currentMonthToString}-${currentDayToString}-${currentYearToString}`;
 }
