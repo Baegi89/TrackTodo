@@ -27,8 +27,9 @@ function onRegistrationSubmit(registrationFormEvent){
     // set local storage key and value for username
     localStorage.setItem(USERNAME_KEY, usernameInput.value);
 
-    // hide registration form after the submission
-    registrationForm.classList.add(CLASSNAME_HIDDEN);
+    // hide registration container after the submission
+    registrationForm.parentElement.classList.add(CLASSNAME_HIDDEN);
+    
     // display greeting 
     displayGreeting(usernameInput.value);
 }
@@ -51,7 +52,7 @@ if(savedUsername === null) { //if user has not signed up
     registrationForm.addEventListener("submit", onRegistrationSubmit);
 }
 else{ //username already exists in local storage
-    registrationForm.classList.add(CLASSNAME_HIDDEN);
+    registrationForm.parentElement.classList.add(CLASSNAME_HIDDEN);
     displayGreeting(savedUsername);
 }
 

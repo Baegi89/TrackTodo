@@ -1,0 +1,91 @@
+/* Registration Container */
+.registration-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration-container input {
+  font-size: 32px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(25, 25, 25, 0.3);
+  transition: all 0.3s ease-in;
+}
+.registration-container input:focus{
+  background-color: transparent;
+  outline: none;
+  font-size: 36px;
+  color:rgba(25, 25, 25, 0.7);
+}
+/* Greeting Container */
+
+.greeting-container{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+  transform-style: preserve-3d;
+}
+.greeting-container:hover{
+  transform: rotateY(180deg);
+}
+.greeting-card__front{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  backface-visibility: hidden;
+}
+.greeting-card__front h1{
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.clock-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clock-container span:first-child{
+  font-size: 42px;
+  font-weight: 700;
+}
+.clock-container span:last-child{
+  font-size: 18px;
+}
+.greeting-card__back{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  padding: 25px 35px;
+  box-sizing: border-box;
+}
+.greeting-card__back span:first-child{
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+.greeting-card__back span:last-child{
+  color:rgba(255, 255, 255, 0.5);
+  display: block;
+  text-align: end;
+}
+.weather-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 22px;
+  /* margin-top: 25px; */
+}

@@ -9,56 +9,61 @@
     <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
   </head>
   <body>
-   
-      <!-- User Registration Form -->
-      <!-- JS done -->
-      <!-- CSS NOT done -->
-      <form id="registration-form">
-        <input
-          required
-          maxlength="12"
-          id="registration-input"
-          type="text"
-          placeholder="Enter your name :)"
-        />
-        <button type="submit">Sign Up</button>
-      </form>
-
-      <!-- Greeting Card -->
-      <!-- JS: greeting done, quote done, weather done-->
-      <!-- CSS NOT done -->
-      <div class="greeting-container hidden">
-        <h1 id="greeting"></h1>
-        <p id="quote">
-          <span></span>
-          <span></span>
-        </p>
-        <div id="weather">
-          <span>
-            <!-- Today's weather with an icon -->
-          </span>
-          <span>
-            <!-- Current location City -->
-          </span>
-          <span>
-            <!-- Current Degree in Cel -->
-          </span>
-          <span>
-            <!-- Current Humidity -->
-          </span>
+    <div class="init background-img">
+      <!-- Initial Screen -->
+      <div class="userinfo-container">
+        <!-- registration -->
+        <div class="registration-container">
+          <form id="registration-form" name="registration-form">
+            <input
+              required
+              maxlength="12"
+              id="registration-input"
+              type="text"
+              placeholder="What should I call you?"
+            />
+          </form>
+        </div>
+        <!-- greeting card -->
+        <div class="greeting-container hidden">
+          <!-- Front side of greeting card -->
+          <div class="greeting-card__front">
+            <h1 id="greeting"></h1>
+            <div class="clock-container">
+              <span id="clock-time"> 00:00:00 </span>
+              <span id="clock-date"> </span>
+            </div>
+          </div>
+          <!-- Back side of greeting card -->
+          <div class="greeting-card__back">
+            <div>
+              <p id="quote">
+                <span></span><br>
+                <span></span>
+              </p>
+            </div>
+            <div class="weather-container" id="weather">
+              <span>
+                <!-- Today's weather with an icon -->
+              </span>
+              <span>
+                <!-- Current location City -->
+              </span>
+              <span>
+                <!-- Current Degree in Cel -->
+              </span>
+              <span>
+                <!-- Current Humidity -->
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Display Current Time and Date -->
-      <!-- JS done -->
-      <!-- CSS NOT done -->
-      <div class="clock-container">
-        <span id="clock-time"> 00:00:00 </span>
-        <span id="clock-date"> </span>
-      </div>
-      <!-- After Login Scene -->
-    
+    </div>
+    <!-- After Login Scene -->
+
     <!-- Horizontal Weekly Calendar -->
-    <main class="main-container">
+    <main class="main-container hidden">
       <!-- Mode Icons -->
       <!-- JS NOT done -->
       <!-- CSS NOT done -->
@@ -77,6 +82,7 @@
           <i class="fa-solid fa-chevron-right"></i>
         </span>
       </div>
+
       <!-- Calendar Table -->
       <!-- JS done -->
       <!-- CSS NOT done -->

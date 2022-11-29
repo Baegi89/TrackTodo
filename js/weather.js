@@ -27,9 +27,9 @@ function onGeolocationSuccess(position){
         const kalDegree = data.main.temp;
         //Calculating in Cel
         const celDegree = (kalDegree * 9 / 5) - 459.67;
-        degreeInfo.innerText = Math.floor(celDegree);
+        degreeInfo.innerText = `${Math.floor(celDegree)}°F`;
         //Getting humidity info
-        humidityInfo.innerText = `${data.main.humidity}%`;
+        humidityInfo.innerText = `Humidity ${data.main.humidity}%`;
     })
 }
 
