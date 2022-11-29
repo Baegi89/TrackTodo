@@ -41,6 +41,9 @@ function displayGreeting(name){
     const greetingContainer = document.querySelector(".greeting-container");
     // Display greeting container
     greetingContainer.classList.remove(CLASSNAME_HIDDEN);
+    const userinfoContainer = document.querySelector(".userinfo-container");
+    const mainContainer = document.querySelector(".main-container");
+    mainContainer.classList.remove(CLASSNAME_HIDDEN);
 }
 
 registrationForm.addEventListener("submit", onRegistrationSubmit);

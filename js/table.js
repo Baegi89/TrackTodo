@@ -16,9 +16,12 @@ const todoTable = document.getElementById("todoTable");
 const todoInputs = document.querySelectorAll("#todoTable input");
 const todoForms = document.querySelectorAll("#todoTable form");
 
+const tableHeader = document.querySelectorAll("#table-header th");
+
 let weekArray = [[], [], [], [], [], [], []];
 
 // Functions
+
 // To update current array in local storage
 function updateData(){
     localStorage.setItem(SAVE_KEY, JSON.stringify(weekArray));

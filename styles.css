@@ -17,6 +17,7 @@
 
 
 
+
 .background-img{
     background-image: url(/images/background-img.jpg);
     background-size: cover;
@@ -24,21 +25,22 @@
     width: 100vw;
     height: 100vh;
     opacity: 1;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 .userinfo-container {
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
   width: 500px;
   height: 230px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   backdrop-filter: blur(5px);
   background-color: rgba(255,255,255,0.1);
   cursor: pointer;
+  transition: all 0.5s ease-in;
+  z-index: 3;
 }
