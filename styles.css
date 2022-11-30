@@ -1,10 +1,10 @@
 /* Font Dosis from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Open+Sans:wght@400;600&display=swap");
 
-@import "/css/reset.css";
-@import "/css/main-container.css";
-@import "/css/variable.css";
-@import "/css/userinfo-container.css";
+@import "../TrackTodo/css/reset.css";
+@import "../TrackTodo/css/main-container.css";
+@import "../TrackTodo/css/variable.css";
+@import "../TrackTodo/css/userinfo-container.css";
 
 .body {
   font-family: "Dosis", sans-serif;
