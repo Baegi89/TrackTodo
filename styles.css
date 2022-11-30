@@ -19,7 +19,7 @@
 
 
 .background-img{
-    background-image: url(/images/background-img.jpg);
+    background-image: url(../TrackTodo/images/background-img.jpg);
     background-size: cover;
     background-position: center;
     width: 100vw;
